@@ -2,11 +2,6 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
 @import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
 
-/* Components */
-@import url("components/_button.css");
-@import url("components/_tag.css");
-
-
 body {
   margin: 0;
   margin-bottom: 100px;
@@ -95,6 +90,7 @@ h2 {
 .profile-stats-container {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
