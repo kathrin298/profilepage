@@ -77,7 +77,7 @@ h2 {
 /*profile section*/
 .profile-container {
   display: flex;
-  grid-column: 1 / span 4;
+  grid-column: 2 / span 3;
   grid-row: 1 / 2;
   width: fit-content;
   justify-items: center;
@@ -280,3 +280,18 @@ h2 {
   border-radius: 20px;
 }
 
+.btn-light {
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 10px 35px;
+  background-color: #E8EAEE;
+  color: #3E4240;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.btn-light:hover {
+  background-color: #E0DFE2;
+}
