@@ -1,0 +1,271 @@
+/* Fonts */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+@import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
+
+/* Components */
+/* @import url("components/name_of_component.css"); */
+@import url("components/_button.css");
+@import url("components/_tag.css");
+
+
+body {
+  margin: 0;
+  margin-bottom: 100px;
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  background-image: url("../images/background-image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {
+  color: #8D9FAC;
+  font-weight: 300;
+}
+
+.text-large-black {
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.txt-sm-gray {
+  font-size: 0.7em;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.my-0 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto 1fr 1fr 2fr;
+}
+
+.profile-container,
+.interest-container,
+.blog-container,
+.skills-container,
+.socials-container,
+.portfolio-item {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 6px 10px 18px 1px rgba(150,150,150,.7);
+  margin: 20px;
+}
+
+/*profile section*/
+.profile-container {
+  display: flex;
+  grid-column: 1 / span 4;
+  grid-row: 1 / 2;
+  width: fit-content;
+  justify-items: center;
+}
+
+.profile-image {
+  background-image: url('../images/Profile-pic.png');
+  background-position: center center;
+  height: 270px;
+  width: 320px;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.profile-stats-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.profile-stat {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.profile-stat p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.profile-text-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.profile-text-container > h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profile-text-container > p {
+  margin-top: 0;
+}
+
+.profile-text {
+  width: 500px;
+  color: black;
+  text-align: justify;
+}
+
+/*interest section*/
+.interest-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: fit-content;
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 2;
+  position: relative;
+  justify-self: center;
+}
+
+.interest {
+  display: flex;
+  align-items: center;
+}
+
+.interest figure {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.interest figure i {
+  width: 15px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: #3E4240;
+  background-color: #E8EAEE;
+  transition: .2s;
+}
+
+.interest figure i:hover {
+  background-color: #E0DFE2;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  width: 250px;
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+
+.blog-container h2, .portfolio-item h2 {
+  font-size: 1em;
+}
+
+.blog-image {
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url('../images/blog.png');
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
+}
+
+.skills-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  width: fit-content;
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.skill figure i,
+.skill figure img {
+  width: 15px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: #3E4240;
+  background-color: #E8EAEE;
+  transition: .2s;
+  margin-bottom: 5px;
+}
+
+.skill figure img {
+  height: 15px;
+}
+
+.skill figure i:hover,
+.skill figure img:hover {
+  background-color: #E0DFE2;
+}
+
+.skill figure {
+  margin: 0;
+}
+
+.socials-container {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.socials-container a i {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: #3E4240;
+  transition: .2s;
+}
+
+.socials-container a i:hover {
+  color: #595A5C;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+}
+
+.portfolio-item {
+  width: 205px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

@@ -1,0 +1,11 @@
+
+.tag {
+  position: absolute;
+  top: -37px;
+  right: -26px;
+  padding: 8px;
+  font-weight: 300;
+  background-color: #FDA200;
+  color: white;
+  border-radius: 20px;
+}
